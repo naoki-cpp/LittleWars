@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="lws::vector&lt;_Ty&gt;" Collapsed="true">
+    <Position X="54.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAQYAAgAAQAAAAAAgAAAAQAA=</HashCode>
+      <FileName>include\lws.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseScene" Collapsed="true">
+    <Position X="32.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABgCAAA=</HashCode>
+      <FileName>include\BaseScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateRainbowColor" Collapsed="true">
+    <Position X="52.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAQAAAAAAEAAAAAAAAAAAAAAAIAE=</HashCode>
+      <FileName>include\CreateRainbowColor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FpsAdjuster" Collapsed="true">
+    <Position X="54.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABgAIAAAAAAAQAAQAAAAAAAAAQJAAAAA=</HashCode>
+      <FileName>include\FpsAdjuster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphicElement" Collapsed="true">
+    <Position X="56.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACgAAJAAAgAAAAAAAAAAAAAAAAAAMAACAAAAAAA=</HashCode>
+      <FileName>include\GraphicElement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ISceneChanger" Collapsed="true">
+    <Position X="42.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>include\ISceneChanger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneManager" Collapsed="true">
+    <Position X="28.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAA0AAAIABAIAAAAAAgAQAAAEAAAACAgQ=</HashCode>
+      <FileName>include\SceneManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAwAAAAQAAAAAAAAAgAAAAEAAAAAAAAA=</HashCode>
+      <FileName>include\Task.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigureMenu" Collapsed="true">
+    <Position X="21" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAgAAAgAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ConfigureMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndMenu" Collapsed="true">
+    <Position X="25.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAEA=</HashCode>
+      <FileName>include\EndMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpMenu" Collapsed="true">
+    <Position X="27.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAiAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>include\HelpMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu" Collapsed="true">
+    <Position X="30" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\MainMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu" Collapsed="true">
+    <Position X="34.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAAJAAwAAAIAgCAAAEgAIgQAAAAAEAAAAAAA=</HashCode>
+      <FileName>include\Menu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuPage" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAGAAAAgAAAIAEQgAAEgAgACAABAAACABAACA=</HashCode>
+      <FileName>include\MenuPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoreMenu" Collapsed="true">
+    <Position X="18.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAgwAAAAAIAAAAAAAAgAACAAACAAQAAAA=</HashCode>
+      <FileName>include\ScoreMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartMenu" Collapsed="true">
+    <Position X="23.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAgAAAA=</HashCode>
+      <FileName>include\StartMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyAppearanceCtrl" Collapsed="true">
+    <Position X="41" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAwABgBIAwAAAAAAAAAAABABgAQAAAAAAAAIAAA=</HashCode>
+      <FileName>include\EnemyAppearanceControler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameControler" Collapsed="true">
+    <Position X="35.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQABAAAAAAAAIAIAAAABAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>include\GameControler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="32.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASEAAQBBAAAIwAAIAAACAAABAAAhYAAAABAABBQIiE=</HashCode>
+      <FileName>include\GameManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphicLoading" Collapsed="true">
+    <Position X="52.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAEQAAIAAAAAAAAA=</HashCode>
+      <FileName>include\GraphicLoading.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundControl" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAgAAEAAAAAAA=</HashCode>
+      <FileName>include\SoundControl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FadeOutNoise" Collapsed="true">
+    <Position X="37.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAwCCAACAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>include\FadeOutNoise.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Noise" Collapsed="true">
+    <Position X="38.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAIAIAAwAAAAAAKAAQQAAAhAAAAAAAAAAGAAA=</HashCode>
+      <FileName>include\Noise.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RandomNoise" Collapsed="true">
+    <Position X="39.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACYAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\RandomNoise.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackGroundGraphic" Collapsed="true">
+    <Position X="48" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAIAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>include\BackGroundGraphic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameOver" Collapsed="true">
+    <Position X="50.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAgAAAIAAwAAAAQIAAQAQAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\GameOver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAhACCAIAAAABAAAAAAAAAEACAAABAAAA=</HashCode>
+      <FileName>include\Point.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceBackGround" Collapsed="true">
+    <Position X="48" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAQAAAAgIAAAAAAAAAEAAIAAAAAARAAAAAAAA=</HashCode>
+      <FileName>include\SpaceBackGround.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="25.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAoIAAAAAAgAAAAAEAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExtremeEnemy" Collapsed="true">
+    <Position X="19.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAIAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>include\ExtremeEnemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject" Collapsed="true">
+    <Position X="25.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQBAIIAAAAAAiAAAAAEAAAACAAAAgAABAAAAAIAAAA=</HashCode>
+      <FileName>include\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomingWeapon" Collapsed="true">
+    <Position X="28.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAgAAAAAAAAAAAEAAAAAABAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>include\HomingWeapon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Living" Collapsed="true">
+    <Position X="28" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAABAAAAgAgAEQEAAAAABAAAEwAAAQAAAAAAAA=</HashCode>
+      <FileName>include\Living.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MachineGun" Collapsed="true">
+    <Position X="22.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAgAgAAAEAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>include\MachineGun.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Missile" Collapsed="true">
+    <Position X="22.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgIAAAgAAAACEAEA4AAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Missile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Moving" Collapsed="true">
+    <Position X="23.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAQAAAAAAACAAAAgAAAQAAAAAAAAAAIAA=</HashCode>
+      <FileName>include\Moving.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NormalEnemy" Collapsed="true">
+    <Position X="22.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAEEAAAAIAAAAAAAAAABEAAAAA=</HashCode>
+      <FileName>include\NormalEnemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Armed" Collapsed="true">
+    <Position X="28" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAABAAAAAAAAAAAAAIAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>include\Armed.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="25.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAoIAIIAAAgAAAAAMAAAgAYgAAAAAAABAAQAADBA=</HashCode>
+      <FileName>include\Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StrongEnemy" Collapsed="true">
+    <Position X="25.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAQAEEAAAAIQAAgACAAAAAAAAAAA=</HashCode>
+      <FileName>include\StrongEnemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon" Collapsed="true">
+    <Position X="28.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAIAAAgAAAAAEAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Weapon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Effect" Collapsed="true">
+    <Position X="32.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAgAAgAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>include\Effect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExplosionEffect" Collapsed="true">
+    <Position X="32.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAQAIAwABAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ExplosionEffect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExplosionSound" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ExplosionSound.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircleCircleCollision" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>include\CircleCircleCollision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircleRectCollision" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAgQAAQAAAAAAAAAAAEAABAAAAAAQAQAAAIAA=</HashCode>
+      <FileName>include\CircleRectCollision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collision" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlexibleCollision" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAEAAAAAAABAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\FlexibleCollision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NullCollision" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAABAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\NullCollision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RectRectCollision" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAARAAAQAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>include\RectRectCollision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Circle" Collapsed="true">
+    <Position X="16.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAIAAAABAGAgAAAAAAAAAAAACAQA=</HashCode>
+      <FileName>include\Circle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NullShape" Collapsed="true">
+    <Position X="35.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>include\NullShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rect" Collapsed="true">
+    <Position X="20.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAIAIgABQGCCAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>include\Rect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shape" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>include\Shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="eScene" Collapsed="true">
+    <Position X="52.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAQAAAAAAgAggAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ISceneChanger.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MenuStatus" Collapsed="true">
+    <Position X="56.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAUAAAACAAAAAAAAAAAAAggAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>include\MenuPage.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GraphType" Collapsed="true">
+    <Position X="54.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAEABAAAAAAAAAAAAAAAAAAAiAAkAAAEAAA=</HashCode>
+      <FileName>include\GraphicLoading.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OffensiveType" Collapsed="true">
+    <Position X="52.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>include\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SHAPE_TYPE" Collapsed="true">
+    <Position X="54.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACAAAAAAAAAAAAAAAgAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>include\Shape.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="メイリオ" Size="9" />
+</ClassDiagram>
