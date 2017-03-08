@@ -16,10 +16,58 @@
     <Filter Include="Header\Menu">
       <UniqueIdentifier>{900c4bdb-b049-43ac-a4ce-388eaeefeebf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header\Controler">
+      <UniqueIdentifier>{89be7059-d0b9-4cb0-ab3f-a4b8aa8d49f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Noise">
+      <UniqueIdentifier>{8f55b913-1fb7-42fe-afa2-4e6fc8ef7b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Game">
+      <UniqueIdentifier>{4b42690e-1480-4aa4-a1f4-5974fed025a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Game\GameElement">
+      <UniqueIdentifier>{db207d1b-3ae4-4e04-a705-3547631e9273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Game\Collision">
+      <UniqueIdentifier>{49053dcb-a30d-406e-b0de-1919715bcad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Game\Collision\Shape">
+      <UniqueIdentifier>{c76ca358-4d38-459e-9597-9d595ecffec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Game\GameElement\Effect">
+      <UniqueIdentifier>{60aa50ee-bf76-4a46-895d-956f6fc3b8ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\SceneManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Task.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BaseScene.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CreateRainbowColor.h">
+      <Filter>Header</Filter>
+    </ClInclude>
     <ClInclude Include="include\FpsAdjuster.h">
       <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicElement.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ISceneChanger.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CircleCircleCollision.h">
+      <Filter>Header\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CircleRectCollision.h">
+      <Filter>Header\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Collision.h">
+      <Filter>Header\Game\Collision</Filter>
     </ClInclude>
     <ClInclude Include="include\ConfigureMenu.h">
       <Filter>Header\Menu</Filter>
@@ -27,11 +75,38 @@
     <ClInclude Include="include\MenuPage.h">
       <Filter>Header\Menu</Filter>
     </ClInclude>
+    <ClInclude Include="include\Enemy.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ExtremeEnemy.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
     <ClInclude Include="include\EndMenu.h">
       <Filter>Header\Menu</Filter>
     </ClInclude>
+    <ClInclude Include="include\EnemyAppearanceControler.h">
+      <Filter>Header\Controler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameControler.h">
+      <Filter>Header\Controler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameManager.h">
+      <Filter>Header\Controler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObject.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
     <ClInclude Include="include\HelpMenu.h">
       <Filter>Header\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RectRectCollision.h">
+      <Filter>Header\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Living.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MachineGun.h">
+      <Filter>Header\Game\GameElement</Filter>
     </ClInclude>
     <ClInclude Include="include\MainMenu.h">
       <Filter>Header\Menu</Filter>
@@ -39,19 +114,195 @@
     <ClInclude Include="include\Menu.h">
       <Filter>Header\Menu</Filter>
     </ClInclude>
+    <ClInclude Include="include\Missile.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NormalEnemy.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Noise.h">
+      <Filter>Header\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NullCollision.h">
+      <Filter>Header\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Player.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Weapon.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StrongEnemy.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
     <ClInclude Include="include\StartMenu.h">
       <Filter>Header\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FlexibleCollision.h">
+      <Filter>Header\Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundControl.h">
+      <Filter>Header\Controler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GraphicLoading.h">
+      <Filter>Header\Controler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FadeOutNoise.h">
+      <Filter>Header\Noise</Filter>
     </ClInclude>
     <ClInclude Include="include\ScoreMenu.h">
       <Filter>Header\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="include\Lws.h">
+    <ClInclude Include="include\RandomNoise.h">
+      <Filter>Header\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameOver.h">
+      <Filter>Header\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Point.h">
+      <Filter>Header\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SpaceBackGround.h">
+      <Filter>Header\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BackGroundGraphic.h">
+      <Filter>Header\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Circle.h">
+      <Filter>Header\Game\Collision\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Rect.h">
+      <Filter>Header\Game\Collision\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Shape.h">
+      <Filter>Header\Game\Collision\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Effect.h">
+      <Filter>Header\Game\GameElement\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ExplosionEffect.h">
+      <Filter>Header\Game\GameElement\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ExplosionSound.h">
+      <Filter>Header\Game\GameElement\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NullShape.h">
+      <Filter>Header\Game\Collision\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Armed.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HomingWeapon.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Moving.h">
+      <Filter>Header\Game\GameElement</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lws.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\LittleWars.cpp">
+    <ClCompile Include="src\Player.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\RandomNoise.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RectRectCollision.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneManager.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScoreMenu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundControl.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpaceBackGround.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StartMenu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StrongEnemy.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CircleCircleCollision.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CircleRectCollision.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConfigureMenu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CreateRainbowColor.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EndMenu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EnemyAppearanceControler.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExplosionEffect.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExtremeEnemy.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FadeOutNoise.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FlexibleCollision.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameManager.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameOver.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GraphicElement.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HelpMenu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MachineGun.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MainMenu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Menu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MenuPage.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Missile.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Noise.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalEnemy.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Header</Filter>
+    </None>
   </ItemGroup>
 </Project>

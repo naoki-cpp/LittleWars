@@ -1,13 +1,14 @@
 //-------------------------------------------------------------------------------
-//		Copyright 2017 NaokiYano
+//		Copyright 2015 NaokiYano
 //
-//			LonelyBattle ver 0.00
+//			LonelyBattle ver 0.08
 //
 //
 //-------------------------------------------------------------------------------
 #include <memory>
 #include "DxLib.h"
-#include "../include/LWs.h"
+#include "../include/SceneManager.h"
+#include "../include/lws.h"
 #include "../include/FpsAdjuster.h"
 
 //キー情報の取得
@@ -18,7 +19,7 @@ int WINAPI WinMain(_In_  HINSTANCE hInstance, _In_opt_ HINSTANCE hit_point_revIn
 	///////////////////////////////////////////////////////////////
 	//DxLibの初期化
 
-	LWs::vector<int> window(600, 700); SetWindowText("LonelyBattle");
+	lws::vector<int> window(600, 700); SetWindowText("LonelyBattle");
 	ChangeWindowMode(TRUE);
 	SetGraphMode(window.x_, window.y_, 32);
 	if (DxLib_Init() == -1)return -1;
@@ -31,6 +32,8 @@ int WINAPI WinMain(_In_  HINSTANCE hInstance, _In_opt_ HINSTANCE hit_point_revIn
 	//オブジェクト初期化
 	FpsAdjuster fps;//fps制御
 	int key[256];  //キーが押されているフレーム数を格納する
+	std::shared_ptr<SceneManager> ScMgr(std::make_shared<SceneManager>(window, screen_handle, key));
+	ScMgr->Initialize();
 	//オブジェクト初期化ここまで
 	////////////////////////////////////////////////////////
 	//メインループ
@@ -40,6 +43,9 @@ int WINAPI WinMain(_In_  HINSTANCE hInstance, _In_opt_ HINSTANCE hit_point_revIn
 		SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 		ClearDrawScreen();
 		//メイン処理
+		ScMgr->Update();
+		if (ScMgr->End())break;
+		ScMgr->Draw();
 		fps.Update();	//更新
 		fps.Draw();		//描画
 		//画面に反映

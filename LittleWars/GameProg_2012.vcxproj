@@ -11,19 +11,97 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Lws.h" />
+    <ClInclude Include="include\lws.h" />
+    <ClInclude Include="include\BackGroundGraphic.h" />
+    <ClInclude Include="include\BaseScene.h" />
+    <ClInclude Include="include\Circle.h" />
+    <ClInclude Include="include\CircleCircleCollision.h" />
+    <ClInclude Include="include\CircleRectCollision.h" />
+    <ClInclude Include="include\Collision.h" />
     <ClInclude Include="include\ConfigureMenu.h" />
+    <ClInclude Include="include\CreateRainbowColor.h" />
+    <ClInclude Include="include\Effect.h" />
     <ClInclude Include="include\EndMenu.h" />
+    <ClInclude Include="include\Enemy.h" />
+    <ClInclude Include="include\EnemyAppearanceControler.h" />
+    <ClInclude Include="include\ExplosionEffect.h" />
+    <ClInclude Include="include\ExplosionSound.h" />
+    <ClInclude Include="include\ExtremeEnemy.h" />
+    <ClInclude Include="include\FadeOutNoise.h" />
+    <ClInclude Include="include\FlexibleCollision.h" />
     <ClInclude Include="include\FpsAdjuster.h" />
+    <ClInclude Include="include\GameControler.h" />
+    <ClInclude Include="include\GameManager.h" />
+    <ClInclude Include="include\GameObject.h" />
+    <ClInclude Include="include\GameOver.h" />
+    <ClInclude Include="include\GraphicElement.h" />
+    <ClInclude Include="include\GraphicLoading.h" />
     <ClInclude Include="include\HelpMenu.h" />
+    <ClInclude Include="include\HomingWeapon.h" />
+    <ClInclude Include="include\ISceneChanger.h" />
+    <ClInclude Include="include\Living.h" />
+    <ClInclude Include="include\MachineGun.h" />
     <ClInclude Include="include\MainMenu.h" />
     <ClInclude Include="include\Menu.h" />
     <ClInclude Include="include\MenuPage.h" />
+    <ClInclude Include="include\Missile.h" />
+    <ClInclude Include="include\Moving.h" />
+    <ClInclude Include="include\Noise.h" />
+    <ClInclude Include="include\NormalEnemy.h" />
+    <ClInclude Include="include\NullCollision.h" />
+    <ClInclude Include="include\NullShape.h" />
+    <ClInclude Include="include\Armed.h" />
+    <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\Point.h" />
+    <ClInclude Include="include\RandomNoise.h" />
+    <ClInclude Include="include\Rect.h" />
+    <ClInclude Include="include\RectRectCollision.h" />
+    <ClInclude Include="include\Resource.h" />
+    <ClInclude Include="include\SceneManager.h" />
     <ClInclude Include="include\ScoreMenu.h" />
+    <ClInclude Include="include\Shape.h" />
+    <ClInclude Include="include\SoundControl.h" />
+    <ClInclude Include="include\SpaceBackGround.h" />
     <ClInclude Include="include\StartMenu.h" />
+    <ClInclude Include="include\StrongEnemy.h" />
+    <ClInclude Include="include\Task.h" />
+    <ClInclude Include="include\Weapon.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\LittleWars.cpp" />
+    <ClCompile Include="src\CircleCircleCollision.cpp" />
+    <ClCompile Include="src\CircleRectCollision.cpp" />
+    <ClCompile Include="src\ConfigureMenu.cpp" />
+    <ClCompile Include="src\CreateRainbowColor.cpp" />
+    <ClCompile Include="src\EndMenu.cpp" />
+    <ClCompile Include="src\EnemyAppearanceControler.cpp" />
+    <ClCompile Include="src\ExplosionEffect.cpp" />
+    <ClCompile Include="src\ExtremeEnemy.cpp" />
+    <ClCompile Include="src\FadeOutNoise.cpp" />
+    <ClCompile Include="src\FlexibleCollision.cpp" />
+    <ClCompile Include="src\GameManager.cpp" />
+    <ClCompile Include="src\GameOver.cpp" />
+    <ClCompile Include="src\GraphicElement.cpp" />
+    <ClCompile Include="src\HelpMenu.cpp" />
+    <ClCompile Include="src\MachineGun.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainMenu.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\MenuPage.cpp" />
+    <ClCompile Include="src\Missile.cpp" />
+    <ClCompile Include="src\Noise.cpp" />
+    <ClCompile Include="src\NormalEnemy.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\RandomNoise.cpp" />
+    <ClCompile Include="src\RectRectCollision.cpp" />
+    <ClCompile Include="src\SceneManager.cpp" />
+    <ClCompile Include="src\ScoreMenu.cpp" />
+    <ClCompile Include="src\SoundControl.cpp" />
+    <ClCompile Include="src\SpaceBackGround.cpp" />
+    <ClCompile Include="src\StartMenu.cpp" />
+    <ClCompile Include="src\StrongEnemy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2F79C52B-1A12-456C-B8F1-A89E36D5C247}</ProjectGuid>

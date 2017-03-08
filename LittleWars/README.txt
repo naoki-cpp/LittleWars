@@ -1,8 +1,11 @@
-【LittleWars】
-【製作者】Naoki Yano
+【LonelyBattle】
+【製作者】矢野直樹(11)
 【使用素材】
 ライブラリ:DxLib http://homepage2.nifty.com/natupaji/DxLib/
 音楽：魔王魂 http://maoudamashii.jokersounds.com/music_rule.html
 【動作環境】Ｗｉｎｄｏｗｓ９８以降のＯＳ
 　ＤｉｒｅｃｔＸ９以降がインストールされていること
 cppファイルの変更によってDxLib以外のライブラリに移行可能。
+【注意事項】
+ソースフリー。ただし解読は頑張れ。
+そのまま文化祭等の出展は許さない。
