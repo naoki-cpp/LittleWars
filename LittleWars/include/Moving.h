@@ -14,7 +14,7 @@ protected:
 		coordinate_ += speed_;
 	}
 
-	Moving(const lws::vector<size_t> &window,const lws::vector<double> &speed):
+	Moving(const lws::Vector<size_t> &window,const lws::Vector<double> &speed):
 		kWindow(window),
 		speed_(speed) 
 	{
@@ -25,9 +25,9 @@ protected:
 			coordinate_.y_ < 0 ||
 			coordinate_.x_ < 0);
 	}
-	const lws::vector<size_t> kWindow;
-	lws::vector<double> speed()const{ return speed_; }
-	lws::vector<double> speed_;
+	const lws::Vector<size_t> kWindow;
+	lws::Vector<double> speed()const{ return speed_; }
+	lws::Vector<double> speed_;
 private:
 	Moving(Moving&);
 };

@@ -1,5 +1,5 @@
 #include "..\include\HelpMenu.h"
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 
 MENU_BEGIN
 HelpMenu::HelpMenu(int *Key, MenuStatus &status) :

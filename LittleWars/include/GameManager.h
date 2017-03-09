@@ -14,7 +14,7 @@ class GameManager :public GameControler, public BaseScene, public std::enable_sh
 {
 public:
 
-	GameManager(int *Key, const lws::vector<int> & window, std::shared_ptr<ISceneChanger> changer, int screen_handle);
+	GameManager(int *Key, const lws::Vector<int> & window, std::shared_ptr<ISceneChanger> changer, int screen_handle);
 	virtual ~GameManager(void);
 	void Initialize()override;
 	void Finalize()override;
@@ -25,7 +25,7 @@ public:
 private:
 	template<typename T>
 	T square(T x) { return x*x; }
-	const lws::vector<int> &kWindow;
+	const lws::Vector<int> &kWindow;
 	//グラフィックのポインターを保持するオブジェクト
 	std::shared_ptr<GraphicLoading> graph_loader_;
 	//ゲームオブジェクトのポインターを管理するオブジェクト

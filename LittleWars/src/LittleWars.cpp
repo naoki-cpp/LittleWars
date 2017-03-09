@@ -6,7 +6,7 @@
 //
 //-------------------------------------------------------------------------------
 #include <memory>
-#include "DxLib.h"
+#include "DxLib\DxLib.h"
 #include "../include/SceneManager.h"
 #include "../include/lws.h"
 #include "../include/FpsAdjuster.h"
@@ -19,7 +19,7 @@ int WINAPI WinMain(_In_  HINSTANCE hInstance, _In_opt_ HINSTANCE hit_point_revIn
 	///////////////////////////////////////////////////////////////
 	//DxLibÇÃèâä˙âª
 
-	lws::vector<int> window(600, 700); SetWindowText("LonelyBattle");
+	lws::Vector<int> window(600, 700); SetWindowText("LonelyBattle");
 	ChangeWindowMode(TRUE);
 	SetGraphMode(window.x_, window.y_, 32);
 	if (DxLib_Init() == -1)return -1;

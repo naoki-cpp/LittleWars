@@ -15,7 +15,7 @@ public:
 	virtual void Move()override { Moving::Move(); }
 	virtual void Attacked(GameObject& HitObject)override { Living::Attacked(HitObject); }
 protected:
-	Weapon(int hit_point, OffensiveType offensive_value, const lws::vector<int> &window, const lws::vector<double> &speed, std::shared_ptr<GraphicLoading> graph_loader, std::weak_ptr<GameControler> controler) :
+	Weapon(int hit_point, OffensiveType offensive_value, const lws::Vector<int> &window, const lws::Vector<double> &speed, std::shared_ptr<GraphicLoading> graph_loader, std::weak_ptr<GameControler> controler) :
 		Living(hit_point, graph_loader, controler),
 		Moving(window, speed)
 	{

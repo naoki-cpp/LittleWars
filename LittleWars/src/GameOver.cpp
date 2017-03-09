@@ -1,9 +1,9 @@
 #include <string>
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "..\include\GameOver.h"
 #include "..\include\FadeOutNoise.h"
 
-GameOver::GameOver(const int &score, const lws::vector<int> &window, const int screen_handle) :
+GameOver::GameOver(const int &score, const lws::Vector<int> &window, const int screen_handle) :
 	waiter_(200),
 	score_(score),
 	kFontHandle(CreateFontToHandle("‚l‚r –¾’©", 30, -1))

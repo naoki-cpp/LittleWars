@@ -9,7 +9,7 @@ class SceneManager :
 	public ISceneChanger,public Task,public std::enable_shared_from_this<ISceneChanger>
 {
 public:
-	SceneManager(const lws::vector<int>& window, const int screen_handle, int* key);
+	SceneManager(const lws::Vector<int>& window, const int screen_handle, int* key);
 	virtual ~SceneManager();
 	void Initialize() override;//‰Šú‰»
 	void Finalize() override;//I—¹ˆ—
@@ -22,7 +22,7 @@ private:
 	std::shared_ptr<BaseScene> scene_;
 	eScene next_scene_;
 	int* key_;
-	const lws::vector<int>& window_;
+	const lws::Vector<int>& window_;
 	int screen_handle_;
 	bool end_flag_;
 };

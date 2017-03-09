@@ -3,7 +3,7 @@
 #include "../include/ExplosionSound.h"
 #include "../include/Enemy.h"
 
-Missile::Missile(std::shared_ptr<GraphicLoading> graph_loader, OffensiveType offensive_value, const lws::vector<double> &coordinate, const lws::vector<double> &speed, double acceleration, double maxspeed, const lws::vector<int> &window, bool homing_flag, std::weak_ptr<GameControler> controler) :
+Missile::Missile(std::shared_ptr<GraphicLoading> graph_loader, OffensiveType offensive_value, const lws::Vector<double> &coordinate, const lws::Vector<double> &speed, double acceleration, double maxspeed, const lws::Vector<int> &window, bool homing_flag, std::weak_ptr<GameControler> controler) :
 	GameObject(coordinate,graph_loader->GetGraphicPtr(GraphType::MISSILE)),
 	HomingWeapon(5, offensive_value, window, speed, graph_loader, controler),
 	Rect(Point::size_,Point::coordinate_),
@@ -38,12 +38,12 @@ void Missile::Move() {
 	if (!object.expired() && homing_flag_)
 	{
 		speed_ += GetUnitVector() * kAcceleration;
-		lock_on_sight_->Draw(lws::vector<double>(object.lock()->GetCoordinateX() + object.lock()->GetSizeX()/2, object.lock()->GetCoordinateY()), 0.0);
+		lock_on_sight_->Draw(lws::Vector<double>(object.lock()->GetCoordinateX() + object.lock()->GetSizeX()/2, object.lock()->GetCoordinateY()), 0.0);
 	}
 	double theta = (speed_).GetArgument();
 	if (speed_.Square() > kMaxSpeed*kMaxSpeed)
 	{
-		speed_ = lws::vector<double>(cos(theta),sin(theta)) * kMaxSpeed;
+		speed_ = lws::Vector<double>(cos(theta),sin(theta)) * kMaxSpeed;
 	}
 	Point::angle(theta);
 	Moving::Move();

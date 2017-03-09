@@ -4,7 +4,7 @@ class FadeOutNoise :
 	public Noise
 {
 public:
-	FadeOutNoise(const lws::vector<int> &window, const int screen_handle, uint32_t NoiseNum);
+	FadeOutNoise(const lws::Vector<int> &window, const int screen_handle, uint32_t NoiseNum);
 	~FadeOutNoise();
 	void Initialize()override;
 	void Update()override;

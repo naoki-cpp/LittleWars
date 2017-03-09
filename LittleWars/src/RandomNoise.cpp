@@ -1,8 +1,8 @@
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "..\include\RandomNoise.h"
 
 
-RandomNoise::RandomNoise(const lws::vector<int> &window, const int screen_handle, uint32_t NoiseNum):
+RandomNoise::RandomNoise(const lws::Vector<int> &window, const int screen_handle, uint32_t NoiseNum):
 	Noise(window,screen_handle,NoiseNum)
 {
 }

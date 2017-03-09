@@ -8,7 +8,7 @@ class ExplosionEffect :
 {
 public:
 
-	explicit ExplosionEffect(std::shared_ptr<GraphicElement> graphic, const lws::vector<int> &coordinate, const double angle);
+	explicit ExplosionEffect(std::shared_ptr<GraphicElement> graphic, const lws::Vector<int> &coordinate, const double angle);
 	virtual ~ExplosionEffect();
 	void Initialize()override;
 	void Update()override;

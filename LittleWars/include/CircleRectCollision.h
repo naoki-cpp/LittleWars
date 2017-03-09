@@ -20,14 +20,14 @@ private:
 	template<typename T>
 	T square(T x_)const { return x_*x_; }
 	template<typename T>
-	T InnerProduct(const lws::vector<T> vector1, const lws::vector<T> vector2)const { return (vector1.x_*vector2.x_ + vector1.y_*vector2.y_); }
+	T InnerProduct(const lws::Vector<T> vector1, const lws::Vector<T> vector2)const { return (vector1.x_*vector2.x_ + vector1.y_*vector2.y_); }
 	template<typename T>
-	T OuterProduct(const lws::vector<T> vector1, const lws::vector<T> vector2)const { return (vector1.x_*vector2.y_ - vector1.y_*vector2.x_); }
+	T OuterProduct(const lws::Vector<T> vector1, const lws::Vector<T> vector2)const { return (vector1.x_*vector2.y_ - vector1.y_*vector2.x_); }
 	template<typename T>
-	T VectorLength2(const lws::vector<T> vector)const { return InnerProduct(vector, vector); }
+	T VectorLength2(const lws::Vector<T> vector)const { return InnerProduct(vector, vector); }
 
-	bool VertexInCircle(const lws::vector<double> vertex[4], const Circle &circle)const;
-	bool CircleAcrossRectangle(const lws::vector<double> vertex[4], const Circle &circle)const;
-	bool CircleInRect(const lws::vector<double> vertex[4], const Circle &circle)const;
+	bool VertexInCircle(const lws::Vector<double> vertex[4], const Circle &circle)const;
+	bool CircleAcrossRectangle(const lws::Vector<double> vertex[4], const Circle &circle)const;
+	bool CircleInRect(const lws::Vector<double> vertex[4], const Circle &circle)const;
 };
 

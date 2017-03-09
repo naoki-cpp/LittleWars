@@ -7,7 +7,7 @@ class Circle :
 {
 public:
 
-	Circle(lws::vector<int>& size, lws::vector<double>& coordinate):
+	Circle(lws::Vector<int>& size, lws::Vector<double>& coordinate):
 		size_(size),
 		coordinate_(coordinate)
 	{
@@ -21,7 +21,7 @@ public:
 	double GetCenterX()const{ return coordinate_.x_; }
 	double GetCenterY()const{ return coordinate_.y_; }
 private:
-	lws::vector<int>& size_;
-	lws::vector<double>& coordinate_;
+	lws::Vector<int>& size_;
+	lws::Vector<double>& coordinate_;
 };
 

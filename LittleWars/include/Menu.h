@@ -9,7 +9,7 @@ class Menu :
 	public BaseScene
 {
 public:
-	Menu(const lws::vector<int>& window, const int screen_handle, int* key, std::shared_ptr<ISceneChanger> changer);
+	Menu(const lws::Vector<int>& window, const int screen_handle, int* key, std::shared_ptr<ISceneChanger> changer);
 	virtual ~Menu();
 	void Initialize()override;
 	void Finalize()override;
@@ -17,7 +17,7 @@ public:
 	void Draw()const override;
 private:
 	int* key_;
-	const lws::vector<int> & kWindow;
+	const lws::Vector<int> & kWindow;
 	const int kScrHandle;
 	const menu::MenuPage::MenuElement_t kTitleDefault;
 	std::unique_ptr<CreateRainbowColor> rainbow_;

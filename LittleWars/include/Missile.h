@@ -9,7 +9,7 @@ class Missile :
 	public HomingWeapon, public Rect
 {
 public:
-	Missile(std::shared_ptr<GraphicLoading> loader, OffensiveType offensive_value, const lws::vector<double> &coordinate_, const lws::vector<double> &speed_, double acceleration, double maxspeed, const lws::vector<int> & window, bool homing_flag, std::weak_ptr<GameControler> controler);
+	Missile(std::shared_ptr<GraphicLoading> loader, OffensiveType offensive_value, const lws::Vector<double> &coordinate_, const lws::Vector<double> &speed_, double acceleration, double maxspeed, const lws::Vector<int> & window, bool homing_flag, std::weak_ptr<GameControler> controler);
 	void Update()override;
 	void Attacked(GameObject &HitObject)override;
 	void NearestEnemy(std::shared_ptr<GameObject> object)override { targeted_object(object); }

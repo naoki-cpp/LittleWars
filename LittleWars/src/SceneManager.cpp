@@ -1,9 +1,9 @@
 #include "..\include\SceneManager.h"
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "../include/Menu.h"
 #include "../include/GameManager.h"
 
-SceneManager::SceneManager(const lws::vector<int>& window, const int screen_handle, int* key) :
+SceneManager::SceneManager(const lws::Vector<int>& window, const int screen_handle, int* key) :
 	next_scene_(eScene::NONE),
 	key_(key),
 	window_(window),

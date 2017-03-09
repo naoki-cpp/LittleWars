@@ -1,3 +1,71 @@
-﻿  LittleWars.cpp
+﻿  CircleCircleCollision.cpp
+  コードを生成中...
+  コンパイル中...
+  StrongEnemy.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\strongenemy.h(19): warning C4250: 'StrongEnemy': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\machinegun.h(18): warning C4250: 'MachineGun': 2 つ以上のメンバーが同じ名前を持っています。'Rect::Rect::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\rect.h(19): note: 'Rect::GetShapeType' の宣言を確認してください
+  SpaceBackGround.cpp
+  SceneManager.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\player.h(28): warning C4250: 'Player': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+  RectRectCollision.cpp
+  RandomNoise.cpp
+  Player.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\player.h(28): warning C4250: 'Player': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\missile.h(24): warning C4250: 'Missile': 2 つ以上のメンバーが同じ名前を持っています。'Rect::Rect::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\rect.h(19): note: 'Rect::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\machinegun.h(18): warning C4250: 'MachineGun': 2 つ以上のメンバーが同じ名前を持っています。'Rect::Rect::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\rect.h(19): note: 'Rect::GetShapeType' の宣言を確認してください
+  NormalEnemy.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\normalenemy.h(18): warning C4250: 'NormalEnemy': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\machinegun.h(18): warning C4250: 'MachineGun': 2 つ以上のメンバーが同じ名前を持っています。'Rect::Rect::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\rect.h(19): note: 'Rect::GetShapeType' の宣言を確認してください
+  Noise.cpp
+  Missile.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\missile.h(24): warning C4250: 'Missile': 2 つ以上のメンバーが同じ名前を持っています。'Rect::Rect::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\rect.h(19): note: 'Rect::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+  Menu.cpp
+  MachineGun.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\machinegun.h(18): warning C4250: 'MachineGun': 2 つ以上のメンバーが同じ名前を持っています。'Rect::Rect::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\rect.h(19): note: 'Rect::GetShapeType' の宣言を確認してください
+  LittleWars.cpp
+  GraphicElement.cpp
+  GameOver.cpp
+  GameManager.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\player.h(28): warning C4250: 'Player': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+  FlexibleCollision.cpp
+  FadeOutNoise.cpp
+  ExtremeEnemy.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+  ExplosionEffect.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+  EnemyAppearanceControler.cpp
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\explosioneffect.h(21): warning C4250: 'ExplosionEffect': 2 つ以上のメンバーが同じ名前を持っています。'NullShape::NullShape::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\nullshape.h(15): note: 'NullShape::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\normalenemy.h(18): warning C4250: 'NormalEnemy': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\strongenemy.h(19): warning C4250: 'StrongEnemy': 2 つ以上のメンバーが同じ名前を持っています。'Circle::Circle::GetShapeType' から継承します。
+  c:\users\hy1\desktop\新しいフォルダー\littlewars\littlewars\include\circle.h(19): note: 'Circle::GetShapeType' の宣言を確認してください
+  コードを生成中...
+  コンパイル中...
+  CircleRectCollision.cpp
+  コードを生成中...
   GameProg_2012.vcxproj -> C:\Users\HY1\Desktop\新しいフォルダー\LittleWars\LittleWars\Debug\GameProg_2012.exe
   GameProg_2012.vcxproj -> C:\Users\HY1\Desktop\新しいフォルダー\LittleWars\LittleWars\Debug\GameProg_2012.pdb (Partial PDB)

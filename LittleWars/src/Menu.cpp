@@ -1,4 +1,4 @@
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "..\include\Menu.h"
 #include "../include/MainMenu.h"
 #include "../include/StartMenu.h"
@@ -8,7 +8,7 @@
 #include "../include/EndMenu.h"
 #include "../include\RandomNoise.h"
 #include "../include/Resource.h"
-Menu::Menu(const lws::vector<int>& window, const int screen_handle, int* key, std::shared_ptr<ISceneChanger> changer) :
+Menu::Menu(const lws::Vector<int>& window, const int screen_handle, int* key, std::shared_ptr<ISceneChanger> changer) :
 	BaseScene(changer, screen_handle),
 	kWindow(window),
 	kScrHandle(screen_handle),

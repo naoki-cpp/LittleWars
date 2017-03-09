@@ -1,5 +1,5 @@
 #include "..\include\ScoreMenu.h"
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 
 MENU_BEGIN
 const size_t ScoreMenu::kBuffferSize = 256;

@@ -1,10 +1,10 @@
 #include <string>
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "..\include\EnemyAppearanceControler.h"
 #include "../include/NormalEnemy.h"
 #include "..\include\StrongEnemy.h"
 
-EnemyAppearanceCtrl::EnemyAppearanceCtrl(std::shared_ptr<GraphicLoading> graph_loader, const lws::vector<int> & window, std::weak_ptr<GameControler> controler) :
+EnemyAppearanceCtrl::EnemyAppearanceCtrl(std::shared_ptr<GraphicLoading> graph_loader, const lws::Vector<int> & window, std::weak_ptr<GameControler> controler) :
 	AppearanceInterval(100),
 	graph_loader_(graph_loader),
 	appearance_timer_(0),
@@ -66,10 +66,10 @@ void EnemyAppearanceCtrl::Update()
 				case MapType::NONE:
 					break;
 				case MapType::NORMAL:
-					controler_.lock()->AddObject(std::make_shared<NormalEnemy>(graph_loader_, lws::vector<double>(static_cast<double>(index) *kWindow_.x_/ map_[current_map].size() + 21, 32), lws::vector<double>(0.0, 0.5), kWindow_, controler_));
+					controler_.lock()->AddObject(std::make_shared<NormalEnemy>(graph_loader_, lws::Vector<double>(static_cast<double>(index) *kWindow_.x_/ map_[current_map].size() + 21, 32), lws::Vector<double>(0.0, 0.5), kWindow_, controler_));
 					break;
 				case MapType::STRONG:
-					controler_.lock()->AddObject(std::make_shared<StrongEnemy>(graph_loader_, lws::vector<double>(static_cast<double>(index) *kWindow_.x_/ map_[current_map].size() + 21, 32), lws::vector<double>(0.0, 0.5), kWindow_, controler_));
+					controler_.lock()->AddObject(std::make_shared<StrongEnemy>(graph_loader_, lws::Vector<double>(static_cast<double>(index) *kWindow_.x_/ map_[current_map].size() + 21, 32), lws::Vector<double>(0.0, 0.5), kWindow_, controler_));
 					break;
 				default:
 					break;

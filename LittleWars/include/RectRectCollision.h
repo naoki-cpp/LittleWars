@@ -15,5 +15,5 @@ public:
 
 	bool CollisionTest(const Shape& s1, const Shape& s2)const override;
 private:
-	bool CheckLineCrossing(const lws::vector<double> &p1, const lws::vector<double> &p2, const lws::vector<double> &q1, const lws::vector<double> &q2)const;
+	bool CheckLineCrossing(const lws::Vector<double> &p1, const lws::Vector<double> &p2, const lws::Vector<double> &q1, const lws::Vector<double> &q2)const;
 };

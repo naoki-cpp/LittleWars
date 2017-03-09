@@ -1,9 +1,9 @@
 #include <cmath>
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "..\include\Noise.h"
 #include "../include/Resource.h"
 
-Noise::Noise(const lws::vector<int> &window, const int screen_handle, uint32_t noise_num) :
+Noise::Noise(const lws::Vector<int> &window, const int screen_handle, uint32_t noise_num) :
 	kWindow(window),
 	kScrHandle(screen_handle),
 	kNoiseNum(noise_num),
@@ -40,8 +40,8 @@ void Noise::Draw() const
 void Noise::NoiseReset() {
 	for (size_t i = 0; i < kNoiseNum; i++)
 	{
-		lws::vector<int> vertex(GetRand(kWindow.x_), GetRand(kWindow.y_));
-		box_[i] = BoxElement(lws::vector<int>(vertex.x_, vertex.y_), lws::vector<int>(vertex.x_ + GetRand(kWindow.x_ - vertex.x_), vertex.y_ + GetRand(kWindow.y_ - vertex.y_)));
+		lws::Vector<int> vertex(GetRand(kWindow.x_), GetRand(kWindow.y_));
+		box_[i] = BoxElement(lws::Vector<int>(vertex.x_, vertex.y_), lws::Vector<int>(vertex.x_ + GetRand(kWindow.x_ - vertex.x_), vertex.y_ + GetRand(kWindow.y_ - vertex.y_)));
 	}
 }
 

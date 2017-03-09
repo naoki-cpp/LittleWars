@@ -1,5 +1,5 @@
 #include "..\include\CreateRainbowColor.h"
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #ifndef _USE_MATH_DEFINES
 #define _USE_MATH_DEFINES
 #endif

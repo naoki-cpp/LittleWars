@@ -15,8 +15,8 @@ enum class OffensiveType
 class GameObject :public Task,public Point,public virtual Shape
 {
 protected:
-	GameObject(const lws::vector<double> &coordinate,std::shared_ptr<GraphicElement> &graphic) :
-		Point(coordinate, lws::vector<int>(graphic->GetGraphSizeX(),graphic->GetGraphSizeY())),
+	GameObject(const lws::Vector<double> &coordinate,std::shared_ptr<GraphicElement> &graphic) :
+		Point(coordinate, lws::Vector<int>(graphic->GetGraphSizeX(),graphic->GetGraphSizeY())),
 		graphic_(graphic),
 		attack_power_(0),
 		offensive_value_(OffensiveType::NEUTRAL)

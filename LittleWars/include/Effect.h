@@ -15,7 +15,7 @@ public:
 		return (effect_count_ >= graphic_->GetElementCount());
 	}
 protected:
-	Effect(std::shared_ptr<GraphicElement> graphic,const lws::vector<int> &coordinate, const double angle) :
+	Effect(std::shared_ptr<GraphicElement> graphic,const lws::Vector<int> &coordinate, const double angle) :
 		GameObject(coordinate,graphic),
 		effect_count_(0)
 	{}

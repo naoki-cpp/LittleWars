@@ -5,14 +5,14 @@ class SpaceBackGround :
 	public BackGroundGraphic
 {
 public:
-	SpaceBackGround(const lws::vector<int> & window);
+	SpaceBackGround(const lws::Vector<int> & window);
 	virtual ~SpaceBackGround();
 	void Draw()const override;
 	void Update()override;
 private:
-	std::unique_ptr<lws::vector<int>[]> rapid_star_;
-	std::unique_ptr<lws::vector<int>[]> normal_star_;
-	std::unique_ptr<lws::vector<int>[]> slow_star_;
+	std::unique_ptr<lws::Vector<int>[]> rapid_star_;
+	std::unique_ptr<lws::Vector<int>[]> normal_star_;
+	std::unique_ptr<lws::Vector<int>[]> slow_star_;
 	const int kStarSpeed;
 	const size_t kElementNum;
 };

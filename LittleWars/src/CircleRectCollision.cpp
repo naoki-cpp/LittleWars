@@ -16,11 +16,11 @@ bool CircleRectCollision::CollisionTest(const Shape& s1, const Shape& s2)const{
 		circle2 = dynamic_cast<const Circle*>(&s1);
 	}
 	if (rect1 && circle2){
-		lws::vector<double> vertex[4] = {
-			lws::vector<double>(rect1->GetLeft(), rect1->GetTop()),
-			lws::vector<double>(rect1->GetLeft(), rect1->GetBottom()),
-			lws::vector<double>(rect1->GetRight(), rect1->GetBottom()),
-			lws::vector<double>(rect1->GetRight(), rect1->GetTop())
+		lws::Vector<double> vertex[4] = {
+			lws::Vector<double>(rect1->GetLeft(), rect1->GetTop()),
+			lws::Vector<double>(rect1->GetLeft(), rect1->GetBottom()),
+			lws::Vector<double>(rect1->GetRight(), rect1->GetBottom()),
+			lws::Vector<double>(rect1->GetRight(), rect1->GetTop())
 		};
 
 		if (VertexInCircle(vertex, (*circle2)) || CircleAcrossRectangle(vertex, (*circle2)) || CircleInRect(vertex, (*circle2))){
@@ -32,7 +32,7 @@ bool CircleRectCollision::CollisionTest(const Shape& s1, const Shape& s2)const{
 	}
 	return false;
 }
-bool CircleRectCollision::VertexInCircle(const lws::vector<double> vertex[4], const Circle &circle)const{
+bool CircleRectCollision::VertexInCircle(const lws::Vector<double> vertex[4], const Circle &circle)const{
 	for (size_t i = 0; i < 4; ++i)
 	{
 		if ((square(vertex[i].x_ - circle.GetCenterX()) + square(vertex[i].y_ - circle.GetCenterY()))
@@ -44,12 +44,12 @@ bool CircleRectCollision::VertexInCircle(const lws::vector<double> vertex[4], co
 	return false;
 }
 
-bool CircleRectCollision::CircleAcrossRectangle(const lws::vector<double> vertex[4], const Circle &circle)const{
-	lws::vector<double>CircleCenter = lws::vector<double>(circle.GetCenterX(), circle.GetCenterY());
+bool CircleRectCollision::CircleAcrossRectangle(const lws::Vector<double> vertex[4], const Circle &circle)const{
+	lws::Vector<double>CircleCenter = lws::Vector<double>(circle.GetCenterX(), circle.GetCenterY());
 	for (size_t i = 0; i < 4; ++i)
 	{
-		lws::vector<double> pq = vertex[(i+1)%4] - vertex[i];
-		lws::vector<double> pm = CircleCenter - vertex[i];
+		lws::Vector<double> pq = vertex[(i+1)%4] - vertex[i];
+		lws::Vector<double> pm = CircleCenter - vertex[i];
 		double inner = InnerProduct(pq, pm);
 		double pqd2 = VectorLength2(pq);
 		double k = inner / pqd2;
@@ -61,12 +61,12 @@ bool CircleRectCollision::CircleAcrossRectangle(const lws::vector<double> vertex
 	}
 	return false;
 }
-bool CircleRectCollision::CircleInRect(const lws::vector<double> vertex[4], const Circle &circle)const{
-	lws::vector<double>CircleCenter = lws::vector<double>(circle.GetCenterX(), circle.GetCenterY());
+bool CircleRectCollision::CircleInRect(const lws::Vector<double> vertex[4], const Circle &circle)const{
+	lws::Vector<double>CircleCenter = lws::Vector<double>(circle.GetCenterX(), circle.GetCenterY());
 	double theta[2];
 
 	for (size_t i = 0; i < 2; ++i){
-		lws::vector<double> pp, pm;
+		lws::Vector<double> pp, pm;
 		double inner, outer;
 		pp = vertex[i * 2] - vertex[3 - i * 2];//0,3;2,1
 		pm = CircleCenter - vertex[i];

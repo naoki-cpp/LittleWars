@@ -28,7 +28,7 @@ public:
 		graphic_[GraphType::MISSILE] = std::make_shared<GraphicElement>(MISSILE_GRAPH);
 		graphic_[GraphType::LOCK_ON_SIGHT] = std::make_shared<GraphicElement>(LOCK_ON_SIGHT_GRAPH);
 		graphic_[GraphType::MACHINEGUN] = std::make_shared<GraphicElement>(MACHINEGUN_GRAPH);
-		graphic_[GraphType::EXPLOSION] = std::make_shared<GraphicElement>(EXPLOSION_GRAPH, lws::vector<size_t>(64, 64), lws::vector<size_t>(16, 1));
+		graphic_[GraphType::EXPLOSION] = std::make_shared<GraphicElement>(EXPLOSION_GRAPH, lws::Vector<size_t>(64, 64), lws::Vector<size_t>(16, 1));
 	}
 	std::shared_ptr<GraphicElement> GetGraphicPtr(GraphType type)const { return graphic_[type]; }
 	virtual ~GraphicLoading()

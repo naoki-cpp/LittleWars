@@ -1,4 +1,4 @@
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 #include "../include/EnemyAppearanceControler.h"
 #include "../include/GameManager.h"
 #include "../include/Living.h"
@@ -9,7 +9,7 @@
 
 
 
-GameManager::GameManager(int *key, const lws::vector<int> & window, std::shared_ptr<ISceneChanger> changer, int screen_handle) :
+GameManager::GameManager(int *key, const lws::Vector<int> & window, std::shared_ptr<ISceneChanger> changer, int screen_handle) :
 	BaseScene(changer, screen_handle),
 	graph_loader_(std::make_shared<GraphicLoading>()),
 	kWindow(window),
@@ -29,7 +29,7 @@ void GameManager::Initialize() {
 	enemy_appearance_control_ = std::make_unique<EnemyAppearanceCtrl>(graph_loader_, kWindow, shared_from_this());
 	enemy_appearance_control_->Initialize();
 
-	std::shared_ptr<Player> s_player = std::make_shared<Player>(graph_loader_, lws::vector<double>(kWindow.x_ / 2, kWindow.y_ / 2), lws::vector<double>(4.0, 4.0), 50, 10, kWindow, key_input_, shared_from_this());
+	std::shared_ptr<Player> s_player = std::make_shared<Player>(graph_loader_, lws::Vector<double>(kWindow.x_ / 2, kWindow.y_ / 2), lws::Vector<double>(4.0, 4.0), 50, 10, kWindow, key_input_, shared_from_this());
 	player_ = s_player;
 	AddObject(s_player);
 	for (auto object : *list_game_object_) {

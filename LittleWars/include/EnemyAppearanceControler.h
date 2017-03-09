@@ -9,7 +9,7 @@ class EnemyAppearanceCtrl:
 	public Task
 {
 public:
-	EnemyAppearanceCtrl(const std::shared_ptr<GraphicLoading> graph_loader,const lws::vector<int> & window,std::weak_ptr<GameControler> controler);
+	EnemyAppearanceCtrl(const std::shared_ptr<GraphicLoading> graph_loader,const lws::Vector<int> & window,std::weak_ptr<GameControler> controler);
 	virtual ~EnemyAppearanceCtrl(void);
 	void Initialize()override;
 	void Finalize()override;
@@ -31,5 +31,5 @@ private:
 	std::vector<std::vector<MapType>> map_;
 	size_t current_map;
 
-	const lws::vector<int> & kWindow_;
+	const lws::Vector<int> & kWindow_;
 };

@@ -1,5 +1,5 @@
 #include "..\include\SoundControl.h"
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 
 SoundControl::SoundControl(char* File,int VolumePal)
 

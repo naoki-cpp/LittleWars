@@ -4,18 +4,18 @@
 bool RectRectCollision::CollisionTest(const Shape& s1, const Shape& s2)const{
 	const Rect* rect1 = dynamic_cast<const Rect*>(&s1);
 	const Rect* rect2 = dynamic_cast<const Rect*>(&s2);
-	lws::vector<double> vertex1_[4] = {
-		lws::vector<double>(rect1->GetLeft(), rect1->GetTop()),
-		lws::vector<double>(rect1->GetLeft(), rect1->GetBottom()),
-		lws::vector<double>(rect1->GetRight(), rect1->GetBottom()),
-		lws::vector<double>(rect1->GetRight(), rect1->GetTop())
+	lws::Vector<double> vertex1_[4] = {
+		lws::Vector<double>(rect1->GetLeft(), rect1->GetTop()),
+		lws::Vector<double>(rect1->GetLeft(), rect1->GetBottom()),
+		lws::Vector<double>(rect1->GetRight(), rect1->GetBottom()),
+		lws::Vector<double>(rect1->GetRight(), rect1->GetTop())
 	};
 
-	lws::vector<double> vertex2_[4] = {
-		lws::vector<double>(rect2->GetLeft(), rect2->GetTop()),
-		lws::vector<double>(rect2->GetLeft(), rect2->GetBottom()),
-		lws::vector<double>(rect2->GetRight(), rect2->GetBottom()),
-		lws::vector<double>(rect2->GetRight(), rect2->GetTop())
+	lws::Vector<double> vertex2_[4] = {
+		lws::Vector<double>(rect2->GetLeft(), rect2->GetTop()),
+		lws::Vector<double>(rect2->GetLeft(), rect2->GetBottom()),
+		lws::Vector<double>(rect2->GetRight(), rect2->GetBottom()),
+		lws::Vector<double>(rect2->GetRight(), rect2->GetTop())
 	};
 
 	for (size_t i = 0; i < 4; i++)
@@ -31,7 +31,7 @@ bool RectRectCollision::CollisionTest(const Shape& s1, const Shape& s2)const{
 	}
 	return false;
 }
-bool RectRectCollision::CheckLineCrossing(const lws::vector<double> &p1, const lws::vector<double> &p2, const lws::vector<double> &q1, const lws::vector<double> &q2)const{
+bool RectRectCollision::CheckLineCrossing(const lws::Vector<double> &p1, const lws::Vector<double> &p2, const lws::Vector<double> &q1, const lws::Vector<double> &q2)const{
 	//x_座標によるチェック
 	if (p1.x_ >= p2.x_){
 		if ((p1.x_ < q1.x_ && p1.x_ < q2.x_) || (p2.x_ > q1.x_ || p2.x_ > q2.x_)){

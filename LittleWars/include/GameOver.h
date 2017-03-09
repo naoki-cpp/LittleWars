@@ -8,7 +8,7 @@ class GameOver :
 	public Task
 {
 public:
-	GameOver(const int &score, const lws::vector<int> &window, const int screen_handle);
+	GameOver(const int &score, const lws::Vector<int> &window, const int screen_handle);
 	virtual ~GameOver();
 	void Initialize()override;
 	void Update()override;

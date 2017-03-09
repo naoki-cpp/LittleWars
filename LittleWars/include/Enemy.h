@@ -8,7 +8,7 @@ class Enemy :
 	public Armed, public Moving, virtual public GameObject
 {
 public:
-	Enemy(int hit_point, const lws::vector<int> window, const lws::vector<double> &speed, std::weak_ptr<GameControler> controler, std::shared_ptr<GraphicLoading> graph_loader) :
+	Enemy(int hit_point, const lws::Vector<int> window, const lws::Vector<double> &speed, std::weak_ptr<GameControler> controler, std::shared_ptr<GraphicLoading> graph_loader) :
 		Armed(hit_point, graph_loader, controler),
 		Moving(window, speed) {
 		offensive_value_ = OffensiveType::ENEMY;

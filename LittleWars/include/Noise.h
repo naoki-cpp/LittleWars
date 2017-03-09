@@ -7,7 +7,7 @@
 class Noise :public Task
 {
 public:
-	Noise(const lws::vector<int> &window, const int screen_handle, uint32_t noise_num);
+	Noise(const lws::Vector<int> &window, const int screen_handle, uint32_t noise_num);
 	virtual ~Noise();
 	virtual void Initialize()override;
 	virtual void Finalize()override;
@@ -16,17 +16,17 @@ public:
 protected:
 	struct BoxElement {
 		BoxElement() {}
-		BoxElement(const lws::vector<int>& vertex1, const lws::vector<int>& vertex2) :
+		BoxElement(const lws::Vector<int>& vertex1, const lws::Vector<int>& vertex2) :
 			vertex1_(vertex1),
 			vertex2_(vertex2)
 		{}
 		~BoxElement() {}
-		lws::vector<int> vertex1_;
-		lws::vector<int> vertex2_;
+		lws::Vector<int> vertex1_;
+		lws::Vector<int> vertex2_;
 	};
 	std::unique_ptr<BoxElement[]> box_;
 	const size_t kNoiseNum;
-	const lws::vector<int>& kWindow;
+	const lws::Vector<int>& kWindow;
 	const int kScrHandle;
 	const uint32_t kReductionRatio;
 	void NoiseReset();

@@ -1,5 +1,5 @@
 #include "..\include\ConfigureMenu.h"
-#include "DxLib.h"
+#include "DxLib/DxLib.h"
 
 MENU_BEGIN
 ConfigureMenu::ConfigureMenu(int* Key, MenuStatus &status) :

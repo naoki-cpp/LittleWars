@@ -4,11 +4,11 @@
 class BackGroundGraphic :public Task
 {
 public:
-	BackGroundGraphic(const lws::vector<int> & window) :
+	BackGroundGraphic(const lws::Vector<int> & window) :
 		window_(window)
 	{}
 	virtual ~BackGroundGraphic() {};
 protected:
-	const lws::vector<int> & window_;
+	const lws::Vector<int> & window_;
 };
 

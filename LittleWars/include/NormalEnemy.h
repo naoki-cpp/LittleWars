@@ -6,7 +6,7 @@ class NormalEnemy :
 	public Enemy,public Circle
 {
 public:
-	NormalEnemy(std::shared_ptr<GraphicLoading> graph_loader, const lws::vector<double> &coordinate_, const lws::vector<double> &speed_, const lws::vector<int> & window, std::weak_ptr<GameControler> controler);
+	NormalEnemy(std::shared_ptr<GraphicLoading> graph_loader, const lws::Vector<double> &coordinate_, const lws::Vector<double> &speed_, const lws::Vector<int> & window, std::weak_ptr<GameControler> controler);
 	virtual ~NormalEnemy(void);
 
 	void Attacked(GameObject &HitObject)override;

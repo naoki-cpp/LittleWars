@@ -2,7 +2,7 @@
 
 
 
-FadeOutNoise::FadeOutNoise(const lws::vector<int> &window, const int screen_handle, uint32_t noise_num):
+FadeOutNoise::FadeOutNoise(const lws::Vector<int> &window, const int screen_handle, uint32_t noise_num):
 	Noise(window,screen_handle,noise_num),
 	fade_out_counter_(noise_num),
 	kFadeOutInterval(1)

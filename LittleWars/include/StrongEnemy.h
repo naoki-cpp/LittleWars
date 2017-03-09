@@ -5,7 +5,7 @@ class StrongEnemy :
 	public Enemy,public Circle
 {
 public:
-	StrongEnemy(const std::shared_ptr<GraphicLoading> graph_loader, const lws::vector<double> &coordinate_, const lws::vector<double> &speed_, const lws::vector<int> & window, std::weak_ptr<GameControler> controler);
+	StrongEnemy(const std::shared_ptr<GraphicLoading> graph_loader, const lws::Vector<double> &coordinate_, const lws::Vector<double> &speed_, const lws::Vector<int> & window, std::weak_ptr<GameControler> controler);
 	virtual ~StrongEnemy();
 
 	void NearestEnemy(std::shared_ptr<GameObject>)override;

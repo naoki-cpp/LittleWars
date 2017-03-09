@@ -1,7 +1,7 @@
 #include "../include/ExplosionEffect.h"
 #include "../include/ExplosionSound.h"
 
-ExplosionEffect::ExplosionEffect(std::shared_ptr<GraphicElement> graphic, const lws::vector<int> &coordinate, const double angle) :
+ExplosionEffect::ExplosionEffect(std::shared_ptr<GraphicElement> graphic, const lws::Vector<int> &coordinate, const double angle) :
 	Effect(graphic, coordinate, angle),
 	effect_interval_(3),
 	effect_timer_(0)
