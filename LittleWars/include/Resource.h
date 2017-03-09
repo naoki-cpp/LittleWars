@@ -3,7 +3,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by GameProg_2012.rc
 //
-#define MAINICON                        101
+#define ID_ICON                        101
 
 // Next default values for new objects
 // 
@@ -16,7 +16,7 @@
 #endif
 #endif
 //
-//LonelyBattle Graphic definition
+//LittleWars Graphic definition
 //
 #ifndef GRAPH_DEFINITION
 #define GRAPH_DEFINITION
@@ -30,12 +30,12 @@
 #define EXPLOSION_GRAPH                    "resource/picture/bom.bmp"
 #endif
 //
-//LonelyBattle Sound File definition
+//LittleWars Sound File definition
 //
 #ifndef SOUND_DEFNITION
 #define SOUND_DEFNITION
-#define MENU_BGM "resource/sound/raining_softly.mp3"
-#define BATTLE_BGM "resource/sound/Chinese_Thunder_Road.mp3"
-#define EXPLOSION_SOUND_EFFECT "resource/sound/se_maoudamashii_explosion06.wav"
-#define NOISE_SOUND_EFFECT "resource/sound/sample_noise/tutu2.mp3"
+#define MENU_BGM							"resource/sound/BGM/raining_softly.mp3"
+#define BATTLE_BGM							"resource/sound/BGM/Chinese_Thunder_Road.mp3"
+#define EXPLOSION_SOUND_EFFECT				"resource/sound/explosion_sound/se_maoudamashii_explosion06.wav"
+#define NOISE_SOUND_EFFECT					"resource/sound/noise_sound/sample_noise/tutu2.mp3"
 #endif // !SoundDef

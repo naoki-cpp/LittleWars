@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------------------
 //		Copyright 2015 NaokiYano
 //
-//			LonelyBattle ver 0.08
+//			LittleWars ver 0.08
 //
 //
 //-------------------------------------------------------------------------------
@@ -10,6 +10,7 @@
 #include "../include/SceneManager.h"
 #include "../include/lws.h"
 #include "../include/FpsAdjuster.h"
+#include "../include/Resource.h"
 
 //ÉLÅ[èÓïÒÇÃéÊìæ
 int gpUpdateKey(int Key[256]);
@@ -19,7 +20,7 @@ int WINAPI WinMain(_In_  HINSTANCE hInstance, _In_opt_ HINSTANCE hit_point_revIn
 	///////////////////////////////////////////////////////////////
 	//DxLibÇÃèâä˙âª
 
-	lws::vector<int> window(600, 700); SetWindowText("LonelyBattle");
+	lws::vector<int> window(600, 700); SetWindowText("LittleWars"); SetWindowIconID(ID_ICON);
 	ChangeWindowMode(TRUE);
 	SetGraphMode(window.x_, window.y_, 32);
 	if (DxLib_Init() == -1)return -1;

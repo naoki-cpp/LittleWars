@@ -82,8 +82,8 @@
     <ClCompile Include="src\GameOver.cpp" />
     <ClCompile Include="src\GraphicElement.cpp" />
     <ClCompile Include="src\HelpMenu.cpp" />
+    <ClCompile Include="src\LittleWars.cpp" />
     <ClCompile Include="src\MachineGun.cpp" />
-    <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MainMenu.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MenuPage.cpp" />
@@ -102,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameProg_2012.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\icon\Icon.ico" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2F79C52B-1A12-456C-B8F1-A89E36D5C247}</ProjectGuid>

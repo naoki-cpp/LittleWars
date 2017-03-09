@@ -12,7 +12,7 @@ Menu::Menu(const lws::vector<int>& window, const int screen_handle, int* key, st
 	BaseScene(changer, screen_handle),
 	kWindow(window),
 	kScrHandle(screen_handle),
-	kTitleDefault(0, 0, "LonelyBattle", CreateFontToHandle("‚l‚r –¾’©", 30, -1), 30),
+	kTitleDefault(0, 0, "LittleWars", CreateFontToHandle("‚l‚r –¾’©", 30, -1), 30),
 	key_(key),
 	rainbow_(std::make_unique<CreateRainbowColor>()),
 	noise_(std::make_unique<RandomNoise>(window, screen_handle, 10)),

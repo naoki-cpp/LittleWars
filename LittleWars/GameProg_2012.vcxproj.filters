@@ -278,9 +278,6 @@
     <ClCompile Include="src\MachineGun.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="src\MainMenu.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -299,10 +296,23 @@
     <ClCompile Include="src\NormalEnemy.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\LittleWars.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd">
       <Filter>Header</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameProg_2012.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\icon\Icon.ico">
+      <Filter>Resource</Filter>
+    </Image>
   </ItemGroup>
 </Project>
