@@ -1,0 +1,156 @@
+﻿/*=============================================================================
+  Copyright (C) 2015-2017 DxLibEx project
+  https://github.com/Nagarei/DxLibEx/
+
+  Distributed under the Boost Software License, Version 1.0.
+  (See http://www.boost.org/LICENSE_1_0.txt)
+=============================================================================*/
+#ifndef DXLE_INC_CONFIG_SUFFIX_HPP_
+#define DXLE_INC_CONFIG_SUFFIX_HPP_
+
+#include "dxlibex/config/no_min_max.h"
+#include "dxlibex/config/compiler.hpp"
+//
+// DXLE_CONSTEXPR
+// DXLE_CONSTEXPR_OR_CONST
+// DXLE_STATIC_CONSTEXPR
+// DXLE_STATIC_CONSTEXPR_DATA_MEMBER_INNER
+// DXLE_STATIC_CONSTEXPR_DATA_MEMBER_OUTER
+//
+#ifndef DXLE_NO_CXX11_CONSTEXPR
+#	define DXLE_CONSTEXPR constexpr
+#	define DXLE_CONSTEXPR_OR_CONST constexpr
+#	define DXLE_STATIC_CONSTEXPR static constexpr
+#
+#	define DXLE_STATIC_CONSTEXPR_DATA_MEMBER_INNER(EXPR) = EXPR
+#	define DXLE_STATIC_CONSTEXPR_DATA_MEMBER_OUTER(EXPR)
+#else	// #ifndef DXLE_NO_CXX11_CONSTEXPR
+#	define DXLE_CONSTEXPR
+#	define DXLE_CONSTEXPR_OR_CONST const
+#	define DXLE_STATIC_CONSTEXPR static const
+#
+#	define DXLE_STATIC_CONSTEXPR_DATA_MEMBER_INNER(EXPR)
+#	define DXLE_STATIC_CONSTEXPR_DATA_MEMBER_OUTER(EXPR) = EXPR
+#endif	// #ifndef DXLE_NO_CXX11_CONSTEXPR
+
+//
+// DXLE_CXX14_CONSTEXPR
+// DXLE_CXX14_CONSTEXPR_OR_CONST
+// DXLE_CXX14_STATIC_CONSTEXPR
+//
+#ifndef DXLE_NO_CXX14_CONSTEXPR
+#	define DXLE_CXX14_CONSTEXPR DXLE_CONSTEXPR
+#	define DXLE_CXX14_CONSTEXPR_OR_CONST DXLE_CONSTEXPR_OR_CONST
+#	define DXLE_CXX14_STATIC_CONSTEXPR DXLE_STATIC_CONSTEXPR
+#else	// #ifndef DXLE_NO_CXX14_CONSTEXPR
+#	define DXLE_CXX14_CONSTEXPR
+#	define DXLE_CXX14_CONSTEXPR_OR_CONST const
+#	define DXLE_CXX14_STATIC_CONSTEXPR static const
+#	ifndef DXLE_NO_CXX11_CONSTEXPR
+#		define DXLE_SUPPORT_ONLY_CXX11_CONSTEXPR
+#	endif
+#endif	// #ifndef DXLE_NO_CXX14_CONSTEXPR
+
+//
+// DXLE_INITIALIZER_LIST_CONSTEXPR
+//
+#ifndef DXLE_NO_CXX14_INITIALIZER_LIST
+#	define DXLE_INITIALIZER_LIST_CONSTEXPR DXLE_CXX14_CONSTEXPR
+#else	// #ifndef DXLE_NO_CXX14_INITIALIZER_LIST
+#	define DXLE_INITIALIZER_LIST_CONSTEXPR
+#endif	// #ifndef DXLE_NO_CXX14_INITIALIZER_LIST
+
+
+//
+// DXLE_DEPRECATED
+// DXLE_DEPRECATED_MESSAGE
+//
+#ifdef DXLE_NO_CXX14_ATTRIBUTE_DEPRECATED
+#	if defined(__GNUC__) || defined(__clang__)
+#		define DXLE_DEPRECATED __attribute__((deprecated))
+#		ifdef DXLE_HAS_GNU_DEPRECATED_WITH_MESSAGE_SUPPORT
+#			define DXLE_DEPRECATED_MESSAGE(message) __attribute__((deprecated(message)))
+#		endif
+#	elif defined(_MSC_VER)
+#		define DXLE_DEPRECATED __declspec(deprecated)
+#		define DXLE_DEPRECATED_MESSAGE(message) __declspec(deprecated(message))
+#	else
+#		define DXLE_DEPRECATED
+#	endif
+#	ifndef DXLE_DEPRECATED_MESSAGE
+#		deifne DXLE_DEPRECATED_MESSAGE DXLE_DEPRECATED
+#	endif
+#else
+#	define DXLE_DEPRECATED [[deprecated]]
+#	define DXLE_DEPRECATED_MESSAGE(message) [[deprecated(message)]]
+#endif
+
+//
+// DXLE_NOEXCEPT
+// DXLE_NOEXCEPT_OR_NOTHROW
+//
+#ifndef DXLE_NO_CXX11_NOEXCEPT
+#	define DXLE_NOEXCEPT noexcept
+#	define DXLE_NOEXCEPT_OR_NOTHROW noexcept
+#else	// #ifndef DXLE_CONFIG_DISABLE_NOEXCEPT
+#	define DXLE_NOEXCEPT
+#	define DXLE_NOEXCEPT_OR_NOTHROW throw()
+#endif	// #ifndef DXLE_CONFIG_DISABLE_NOEXCEPT
+
+//
+// DXLE_NOEXCEPT_IF
+// DXLE_NOEXCEPT_EXPR
+// DXLE_NOEXCEPT_EXPR_OR_DEFAULT
+// DXLE_NOEXCEPT_IF_EXPR
+//
+#ifndef DXLE_NO_CXX11_NOEXCEPT_EXPRESSION
+#	define DXLE_NOEXCEPT_IF(COND) noexcept((COND))
+#	define DXLE_NOEXCEPT_EXPR(EXPR) noexcept((EXPR))
+#	define DXLE_NOEXCEPT_EXPR_OR_DEFAULT(EXPR, C) noexcept((EXPR))
+#	define DXLE_NOEXCEPT_IF_EXPR(EXPR) noexcept(noexcept((EXPR)))
+#else //DXLE_NO_CXX11_NOEXCEPT_EXPRESSION
+#	define DXLE_NOEXCEPT_IF(COND)
+#	define DXLE_NOEXCEPT_EXPR(EXPR) false
+#	define DXLE_NOEXCEPT_EXPR_OR_DEFAULT(EXPR, C) C
+#	define DXLE_NOEXCEPT_IF_EXPR(EXPR)
+#endif //DXLE_NO_CXX11_NOEXCEPT_EXPRESSION
+
+//
+// DXLE_USE_UNICODE_LITERALS
+//
+#ifndef DXLE_NO_CXX11_UNICODE_LITERALS
+#	define DXLE_USE_UNICODE_LITERALS 1
+#else	// #ifndef DXLE_CONFIG_DISABLE_UNICODE_LITERALS
+#	define DXLE_USE_UNICODE_LITERALS 0
+#endif	// #ifndef DXLE_CONFIG_DISABLE_UNICODE_LITERALS
+
+//
+// DXLE_REF_QUALIFIERS_LVALUE
+// DXLE_REF_QUALIFIERS_RVALUE
+//
+#ifndef DXLE_NO_CXX11_REF_QUALIFIERS
+#	define DXLE_REF_QUALIFIERS_LVALUE &
+#	define DXLE_REF_QUALIFIERS_RVALUE &&
+#else
+#	define DXLE_REF_QUALIFIERS_LVALUE
+#	define DXLE_REF_QUALIFIERS_RVALUE
+#endif
+
+//
+// DXLE_PREVENT_MACRO_SUBSTITUTION
+//
+#define DXLE_PREVENT_MACRO_SUBSTITUTION
+
+#ifndef DXLE_NO_CXX17_UNUSED
+#	define DXLE_UNUSED [[maybe_unused]]
+#elif defined(__GNUC__)
+#	ifndef DXLE_NO_CXX11_ATTRIBUTES
+#		define DXLE_UNUSED [[gnu::unused]]
+#	else
+#		define DXLE_UNUSED __attribute__((unused))
+#	endif
+#else
+#	define DXLE_UNUSED
+#endif
+
+#endif	// #ifndef DXLE_INC_CONFIG_SUFFIX_HPP_

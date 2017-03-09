@@ -82,8 +82,8 @@
     <ClCompile Include="src\GameOver.cpp" />
     <ClCompile Include="src\GraphicElement.cpp" />
     <ClCompile Include="src\HelpMenu.cpp" />
+    <ClCompile Include="src\LittleWars.cpp" />
     <ClCompile Include="src\MachineGun.cpp" />
-    <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MainMenu.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\MenuPage.cpp" />

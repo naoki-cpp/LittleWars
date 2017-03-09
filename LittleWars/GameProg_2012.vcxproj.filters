@@ -278,9 +278,6 @@
     <ClCompile Include="src\MachineGun.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="src\MainMenu.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -297,6 +294,9 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="src\NormalEnemy.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LittleWars.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
