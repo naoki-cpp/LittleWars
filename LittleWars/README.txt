@@ -1,11 +1,8 @@
-yLonelyBattlez
-y»ìŽÒz–î–ì’¼Ž÷(11)
-yŽg—p‘fÞz
-ƒ‰ƒCƒuƒ‰ƒŠ:DxLib http://homepage2.nifty.com/natupaji/DxLib/
-‰¹ŠyF–‚‰¤° http://maoudamashii.jokersounds.com/music_rule.html
-y“®ìŠÂ‹«z‚v‚‰‚Ž‚„‚‚—‚“‚X‚WˆÈ~‚Ì‚n‚r
-@‚c‚‰‚’‚…‚ƒ‚”‚w‚XˆÈ~‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é‚±‚Æ
-cppƒtƒ@ƒCƒ‹‚Ì•ÏX‚É‚æ‚Á‚ÄDxLibˆÈŠO‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ÉˆÚs‰Â”\B
-y’ˆÓŽ–€z
-ƒ\[ƒXƒtƒŠ[B‚½‚¾‚µ‰ð“Ç‚ÍŠæ’£‚êB
-‚»‚Ì‚Ü‚Ü•¶‰»Õ“™‚Ìo“W‚Í‹–‚³‚È‚¢B
+ã€LonelyBattleã€‘
+ã€è£½ä½œè€…ã€‘çŸ¢é‡Žç›´æ¨¹(11)
+ã€ä½¿ç”¨ç´ æã€‘
+ãƒ©ã‚¤ãƒ–ãƒ©ãƒª:DxLib http://homepage2.nifty.com/natupaji/DxLib/
+éŸ³æ¥½ï¼šé­”çŽ‹é­‚ http://maoudamashii.jokersounds.com/music_rule.html
+ã€å‹•ä½œç’°å¢ƒã€‘ï¼·ï½‰ï½Žï½„ï½ï½—ï½“ï¼™ï¼˜ä»¥é™ã®ï¼¯ï¼³
+ã€€ï¼¤ï½‰ï½’ï½…ï½ƒï½”ï¼¸ï¼™ä»¥é™ãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ã“ã¨
+cppãƒ•ã‚¡ã‚¤ãƒ«ã®å¤‰æ›´ã«ã‚ˆã£ã¦DxLibä»¥å¤–ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã«ç§»è¡Œå¯èƒ½ã€‚
